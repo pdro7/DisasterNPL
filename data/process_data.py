@@ -40,7 +40,7 @@ def clean_data(df):
     # drop duplicates
     df = df.drop_duplicates(keep='last')
     
-    # eliminates some 2 values in related column
+    # eliminates some "2" values in related column
     df["related"].replace({2: 1}, inplace=True)
     
     return df
